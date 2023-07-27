@@ -14,7 +14,7 @@ function SurveyComponent() {
     const xhr = new XMLHttpRequest();
     xhr.open(
       "POST",
-      "https://vhmpchntns.eu-west-1.awsapprunner.com/transfo_ui_save"
+      process.env.API_ENDPOINT
     );
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     xhr.onload = xhr.onerror = function () {

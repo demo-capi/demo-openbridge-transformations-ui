@@ -10,3 +10,5 @@ run:
   env:
     - name: PORT
       value: 3000
+    - name: API_ENDPOINT
+      value: 'https://vhmpchntns.eu-west-1.awsapprunner.com/transfo_ui_save'
