@@ -14,7 +14,7 @@ function SurveyComponent() {
     const xhr = new XMLHttpRequest();
     xhr.open(
       "POST",
-      process.env.API_ENDPOINT
+      "https://capiob1.conversions.events/transfo_ui_save"
     );
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     xhr.onload = xhr.onerror = function () {
